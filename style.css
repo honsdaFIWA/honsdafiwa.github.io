@@ -125,5 +125,16 @@
     font-size: 12px
 }
 
+.swed {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;    
+    border: none;
+    font-size: 26px;    
+    color: white;
+    text-shadow: 0px 0px 6px #ffffff;
+}
+
 
   
