@@ -1,19 +1,19 @@
 const soundtracksogg = ["sweden.oga", "wethands.ogg", "miceonven.ogg"];
 const soundtracksmp4 = ["sweden.mp4", "wethands.mp4", "miceonven.mp4"];
 const engst = ["Sweden - C418", "Wet Hands - C418", "Mice on Venus - C418"]
-var nig = document.getElementsByClassName("srcaudogg");
-var ger = document.getElementsByClassName("srcaudmp4");
-var myAudio = document.getElementById("myAudio");
+var nig = document.getElementById("srcaudogg");
+var ger = document.getElementById("srcaudmp4");
+var joe = document.getElementById("joeaud");
 var cum = document.getElementById("audbut");
-var i = 0;
+let i = 0;
 
 function aud_play_pause() {
-    if (myAudio.paused) {
-      myAudio.play();
+    if (joe.paused) {
+      joe.play();
       cum.classList.remove("fa-play")
       cum.classList.add("fa-pause")
     } else {
-      myAudio.pause();
+      joe.pause();
       cum.classList.add("fa-play")
       cum.classList.remove("fa-pause")
     }
@@ -26,17 +26,19 @@ function aud_next() {
       i++;
   }
 
-  nig.src = "./files/sounds/" + "soundtracksogg[i]"
-  ger.src = "./files/sounds/" + "soundtracksmp4[i]"
-  document.getElementById("audplaying").innerHTML = "Playing" + engst[i]
-  //i hate js html
+  let j = `<p id="audplaying" class="audmin hg-maintitle">Playing ${engst[i]} <button class="swed" type="button" onclick="aud_play_pause()"><i id="audbut" class="fa fa-play"></i></button></p>`;
+
+  nig.src = "./files/sounds/" + soundtracksogg[i];
+  ger.src = "./files/sounds/" + soundtracksmp4[i];
+  document.getElementById("audplaying").innerHTML = j;
+  //i hate everything
 }
 
-myAudio.onended = function() {
-    cum.classList.add("fa-play")
-    cum.classList.remove("fa-pause")
+joe.onended = function() {
     aud_next();
-    setInterval(() => {
-      if (myAudio.paused) myAudio.play();
-    }, 3000);
+    joe.pause();
+    joe.load();
+    setTimeout(() => {
+      if (joe.paused) joe.play(); cum.classList.add("fa-pause"); cum.classList.remove("fa-play")
+    }, 5000);
 };
