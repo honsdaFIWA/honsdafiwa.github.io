@@ -48,27 +48,9 @@
 
     <p class="hg-maintitle" style="text-shadow: 0px 0px 18px #ffffff; color: white;">Playing Sweden - C418 <button class="swed" type="button" onclick="aud_play_pause()"><i id="audbut" class="fa fa-play"></i></button></p>
         <audio id="myAudio"
-            <source src="./files/sounds/sweden.mp4" type='audio/mp4'>
-            <source src="./files/sounds/sweden.oga" type='audio/ogg; codecs=vorbis'>
+            <source class="srcaud" src="./files/sounds/sweden.mp4" type='audio/mp4'>
+            <source class="srcaud" src="./files/sounds/sweden.oga" type='audio/ogg; codecs=vorbis'>
         </audio>
 </body>
-<script>
-    function aud_play_pause() {
-      var myAudio = document.getElementById("myAudio");
-      if (myAudio.paused) {
-        myAudio.play();
-        document.getElementById("audbut").classList.remove("fa-play")
-        document.getElementById("audbut").classList.add("fa-pause")
-      } else {
-        myAudio.pause();
-        document.getElementById("audbut").classList.add("fa-play")
-        document.getElementById("audbut").classList.remove("fa-pause")
-      }
-    };
-
-    myAudio.onended = function() {
-        document.getElementById("audbut").classList.add("fa-play")
-        document.getElementById("audbut").classList.remove("fa-pause")
-    };
-</script>
+<script src="./audbut.js" ></script>
 </html>
