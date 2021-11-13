@@ -26,9 +26,10 @@ function aud_next() {
       i++;
   }
 
-  nig.src = (`./files/sounds/${soundtracksogg[i]}`).toString();
-  ger.src = (`./files/sounds/${soundtracksmp4[i]}`).toString();
-  document.getElementById("audplaying").innerHTML = (`Playing ${engst[i]}`).toString();
+  nig.src = "./files/sounds/" + "soundtracksogg[i]"
+  ger.src = "./files/sounds/" + "soundtracksmp4[i]"
+  document.getElementById("audplaying").innerHTML = "Playing" + engst[i]
+  //i hate js html
 }
 
 myAudio.onended = function() {
