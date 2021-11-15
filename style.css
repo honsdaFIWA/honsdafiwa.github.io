@@ -2,6 +2,10 @@
     font-family: funnyFont;
     src: url(files/fonts/Mojang-Regular.ttf);
  }
+ @font-face {
+    font-family: profFont;
+    src: url(files/fonts/Nunito-Regular.ttf);
+ }
 
  body {
      margin: 0px;
@@ -24,6 +28,18 @@
     text-align: center;
 }
 
+.font-d {
+    font-family: funnyFont;
+    font-size: 26px;
+    text-align: center;
+}
+
+.font-p {
+    font-family: profFont;
+    font-size: 26px;
+    text-align: center;
+}
+
 #prl {
     background-image: url(files/images/hgdiv-bg.png);
     background-attachment: fixed;
@@ -34,6 +50,16 @@
     border-style: solid;
     border-color: white;
     border-width: 10px 0px 10px 0px;
+}
+
+.hg-sect-d {
+    background: rgba(255, 255, 255, 0.65);
+    min-height: 100px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px 0px 10px 0px;
+    box-shadow: 0px 0px 18px #ffffff;
+    padding: 50px;
 }
 
 .hg-sect-1 {
@@ -139,6 +165,41 @@
     font-size: 26px;    
     color: white;
     text-shadow: 0px 0px 6px #ffffff;
+}
+
+tr#joetab>td {
+    padding: 0.6em;
+}
+
+tr#joetab>td>img {
+    border-radius: 20%;
+}
+
+#refhonsda {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#refhonsda:hover {
+    color:rgb(117, 117, 145);
+    text-shadow: 0px 0px 6px rgb(117, 117, 145);
+}
+
+.fuck-everything {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 10s ease infinite;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
 }
 
 
