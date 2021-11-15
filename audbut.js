@@ -39,6 +39,7 @@ joe.onended = function() {
     joe.pause();
     joe.load();
     setTimeout(() => {
-      if (joe.paused) joe.play(); cum.classList.add("fa-pause"); cum.classList.remove("fa-play")
+      if (joe.paused) joe.play();
+      cum.classList.add("fa-pause"); cum.classList.remove("fa-play");
     }, 5000);
 };
