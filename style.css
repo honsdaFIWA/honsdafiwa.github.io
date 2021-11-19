@@ -86,7 +86,7 @@
       ". fart main-fart fart2 ."
       ". . . . .";
     box-shadow: 0px 0px 18px #ffffff;
-  }
+}
 .hg-div-grid .title {
     margin-top: 20%;
     grid-area: title; 
@@ -218,10 +218,41 @@ tr#joetab>td>img {
     100%{background-position:0% 50%}
 }
 
+#insanej {
+    width: 50%;
+}
+
+.div-d {
+    display: inline-block;
+    border: 6px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
  /* im so lazy at doing responsive stuff */
- @media only screen and (max-width: 600px) {
-    body {
-      
+ @media only screen and (max-width: 620px) {
+    .hg-div-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 0.4fr 2fr 0.4fr 2fr 0.4fr 2fr 0.8fr;
+        gap: 0px 40px;
+        grid-template-areas:
+          ". title ."
+          ". . ."
+          ". fart ."
+          ". . ."
+          ". main-fart ."
+          ". . ."
+          ". fart2 ."
+          ". . .";
+        box-shadow: 0px 0px 18px #ffffff;
+    }
+    #insanej {
+        width: 100%;
+    }
+    .div-d {
+        overflow-x: auto;
     }
 }
 
