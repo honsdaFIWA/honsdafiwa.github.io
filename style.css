@@ -6,11 +6,15 @@
     font-family: profFont;
     src: url(files/fonts/Nunito-Regular.ttf);
  }
+ @font-face {
+    font-family: nunitodic;
+    src: url(files/fonts/Nunito-SemiBold.ttf);
+ }
 
  body {
      margin: 0px;
      padding: 0px;
-     background: linear-gradient(249deg, #15ffeb, #8000ff, #00ff4c, #2c72ff);
+     background: linear-gradient(249deg, #15ffeb, #8000ff, #21c54a, #2c72ff);
      background-size: 800% 800%;
  
      animation: fart 47s ease infinite;
@@ -154,6 +158,7 @@
 .audmin {
     text-shadow: 0px 0px 18px #ffffff; 
     color: white;
+    display: inline-block;
 }
 
 .swed {     
@@ -162,13 +167,13 @@
     cursor:pointer;
     overflow: hidden;    
     border: none;
-    font-size: 26px;    
+    font-size: 28px;    
     color: white;
     text-shadow: 0px 0px 6px #ffffff;
 }
 
 tr#joetab>td {
-    padding: 0.6em;
+    padding: 1em;
 }
 
 tr#joetab>td>img {
@@ -192,11 +197,20 @@ tr#joetab>td>img {
     background-size: 800% 800%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: rainbow 10s ease infinite;
+    animation: gradshin 10s ease infinite;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes rainbow { 
+.shinyes {
+    background-image: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(175, 175, 175), rgb(255, 255, 255), rgb(175, 175, 175));
+    text-align: center;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradshin 10s ease infinite;
+}
+
+@keyframes gradshin { 
     0%{background-position:0% 50%}
     50%{background-position:100% 25%}
     100%{background-position:0% 50%}
