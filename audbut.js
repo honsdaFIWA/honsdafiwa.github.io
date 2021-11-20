@@ -26,9 +26,9 @@ function aud_next() {
       i++;
   }
 
-  let j = `<p id="audplaying" class="audmin hg-maintitle">Playing ${engst[i]}</p>`;
-  nig.src = "./files/sounds/" + soundtracksogg[i];
-  ger.src = "./files/sounds/" + soundtracksmp4[i];
+  let j = `Playing ${engst[i]}`;
+  nig.src = `./files/sounds/${soundtracksogg[i]}`;
+  ger.src = `./files/sounds/${soundtracksmp4[i]}`;
   document.getElementById("audplaying").innerHTML = j;
   //i hate everything
 }
