@@ -1,6 +1,6 @@
-const soundtracksogg = ["sweden.oga", "wethands.ogg", "miceonven.ogg"];
-const soundtracksmp4 = ["sweden.mp4", "wethands.mp4", "miceonven.mp4"];
-const engst = ["Sweden - C418", "Wet Hands - C418", "Mice on Venus - C418"];
+const soundtracksogg = ["sweden.oga", "wethands.ogg", "miceonven.ogg", "dryhands.ogg"];
+const soundtracksmp4 = ["sweden.mp4", "wethands.mp4", "miceonven.mp4", "dryhands.mp4"];
+const engst = ["Sweden - C418", "Wet Hands - C418", "Mice on Venus - C418", "Dry Hands - C418"];
 var nig = document.getElementById("srcaudogg");
 var ger = document.getElementById("srcaudmp4");
 var joe = document.getElementById("joeaud");

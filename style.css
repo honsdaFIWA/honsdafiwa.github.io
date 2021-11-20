@@ -16,7 +16,7 @@
  body {
      margin: 0px;
      padding: 0px;
-     background: linear-gradient(249deg, #15ffeb, #8000ff, #21c54a, #2c72ff);
+     background: linear-gradient(249deg, #2a202e, #0c232e, #101216, #13233b);
      background-size: 800% 800%;
  
      animation: fart 47s ease infinite;
@@ -32,6 +32,7 @@
     font-family: funnyFont;
     font-size: 26px;
     text-align: center;
+    text-shadow: 0px 0px 18px #ffffff;
 }
 
 .font-d {
@@ -54,17 +55,17 @@
     background-size: cover;
     min-height: 500px;
     border-style: solid;
-    border-color: white;
+    border-color: #101216;
     border-width: 10px 0px 10px 0px;
 }
 
 .hg-sect-d {
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(20, 20, 31, 0.65);
     min-height: 100px;
     border-style: solid;
-    border-color: white;
+    border-color: #101216;
     border-width: 10px 0px 10px 0px;
-    box-shadow: 0px 0px 18px #ffffff;
+    box-shadow: 0px 0px 18px #101216;
     padding: 50px;
 }
 
@@ -85,7 +86,7 @@
       ". fart main-fart fart2 ."
       ". fart main-fart fart2 ."
       ". . . . .";
-    box-shadow: 0px 0px 18px #ffffff;
+    box-shadow: 0px 0px 18px #101216;
 }
 .hg-div-grid .title {
     margin-top: 20%;
@@ -204,7 +205,7 @@ tr#joetab>td>img {
 }
 
 .shinyes {
-    background-image: repeating-linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(133, 133, 133), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+    background-image: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(182, 182, 182), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
     text-align: center;
     background-size: 200% 200%;
     -webkit-background-clip: text;
@@ -224,10 +225,10 @@ tr#joetab>td>img {
 
 .div-d {
     display: inline-block;
-    border: 6px solid rgba(255, 255, 255, 0.6);
+    border: 6px solid rgba(17, 17, 32, 0.6);
     border-radius: 8px;
-    box-shadow: 0px 0px 6px #ffffff;
-    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 6px rgba(17, 17, 32, 0.6);
+    background-color: rgba(17, 17, 32, 0.5);
 }
 
  /* im so lazy at doing responsive stuff */
@@ -254,6 +255,10 @@ tr#joetab>td>img {
     .div-d {
         overflow-x: auto;
     }
+}
+
+.albinomoment {
+    color: white;
 }
 
 
